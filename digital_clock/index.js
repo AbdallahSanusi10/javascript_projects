@@ -14,6 +14,8 @@ function updateTime() {
         ampm ="PM";
     }
 
+    h = h < 10? "0" + h : h;
+
     hourEl.innerText = h;
     minuteEl.innerText = m;
     secondEl.innerText = s;
