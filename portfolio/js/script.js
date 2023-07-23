@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 
-/*typed js*/
+/*typed js showing web devloper and chemical engineer on the home page*/
 const typed = new Typed('.multiple-text', {
     strings: ['Web Developer', 'Chemical Engineer'],
     typeSpeed: 100,
@@ -62,3 +62,71 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+
+
+
+
+
+
+
+
+
+/*Activate the Read more button*/
+var readMoreBtn = document.getElementById('about-me-more');
+var seeLessBtn = document.getElementById('see-less');
+var paragraphs = document.querySelectorAll('#extra-content');
+var shouldDisplayContent = localStorage.getItem('displayContent') === 'true';
+
+function toggleContentDisplay(display) {
+  for (var i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].classList.toggle('hide', !display);
+  }
+  readMoreBtn.style.display = display ? 'none' : 'block';
+  seeLessBtn.style.display = display ? 'block' : 'none';
+}
+
+readMoreBtn.addEventListener('click', function() {
+  toggleContentDisplay(true);
+  localStorage.setItem('displayContent', 'true');
+});
+
+seeLessBtn.addEventListener('click', function() {
+  toggleContentDisplay(false);
+  localStorage.setItem('displayContent', 'false');
+});
+
+toggleContentDisplay(shouldDisplayContent);
+
+
+
+
+
+
+
+/* submit for Contact me section
+var contactForm = document.getElementById('contact');
+
+contactForm.addEventListener('submit', function(event) {
+  //event.preventDefault(); // Prevents the form from submitting and refreshing the page
+
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
+  var email = document.getElementById('email').value;
+  var subject = document.getElementById('subject').value;
+  var message = document.getElementById('message').value;
+
+  if (message.trim() !== '') {
+    var alertMessage = 'Message sent!\n\n' +
+                       'Name: ' + name + '\n' +
+                       'Phone Number: ' + phone + '\n' +
+                       'Email Address: ' + email + '\n' +
+                       'Email Subject: ' + subject + '\n' +
+                       'Message: ' + message;
+
+    alert("Message Sent!"); // Display an alert with the submitted information
+    contactForm.reset(); // Reset the form fields after successful submission
+  }
+});
+
+*/

@@ -34,12 +34,17 @@
             <h3>Hello, It's Me</h3>
             <h1>Abdallah Sanusi</h1>
             <h3>I'm a <span class="multiple-text"></span></h3>
-            <p>bla habaidksdck wecoscnawlw w werv aewr vae fvaefhi  oij o  iuhi u vjaervewa rvaev aerv ae fvae vfae vcaw ecaw vc awvc awe vae vaerv ae</p>
+            <p>Welcome to my portfolio! I am a passionate web developer with a background in chemical engineering, dedicated to crafting visually captivating websites with optimal functionality and user experience.
+
+
+
+
+            </p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/abdallah-sanusi-8b16b814b/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://github.com/AbdallahSanusi10" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bx-envelope' ></i></a>
+                <a href="https://www.instagram.com/_k_a_y_101/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="#contact"><i class='bx bx-envelope' ></i></a>
             </div>
             <a href="cv.pdf" class="btn" target="_blank">Download CV</a>
 
@@ -61,12 +66,20 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Web Developer!</h3>
-            <p>asksjav uewf weefowfqwogbefbefebe egegihegoehg e  e  rgethertr bty erg rttsdf vthnyn gf
-                 tn yny nbdf nbtr yntfynftb gnygnt fnb yntf ngfhunfu nfg ynft n
-                 dfvsevrsbrvsefkrkesv sdf frkgv fg
-                 dsfvmskmergdbgfbnrskbnrgnbkrtvsmekdlvrsk rgkvsrbkrrg rfgrr 
-                 gfunbrdtn tyfn t snh</p>
-            <a href="#" class="btn">Read More</a>
+            <p>I am a passionate web developer with a background in chemical engineering. With a BSc and MSc in chemical engineering, I bring a strong foundation in problem-solving, analytical thinking, and attention to detail to my work.
+
+
+            </p>
+
+            <div id="extra-content">
+                <p>Recently, I made the exciting decision to transition into web development and enrolled in a bootcamp to expand my skills. Through intensive training, I have gained expertise in HTML, CSS, and JavaScript, enabling me to create visually appealing and user-friendly websites.</p>
+                <p>What sets me apart is the unique perspective I bring from my background in chemical engineering. My systematic and logical approach, honed through solving complex engineering problems, seamlessly translates into coding challenges. I excel at delivering efficient solutions that prioritize optimal functionality and user experience.</p>
+                <p>Collaboration is a key value for me, and I thrive in team environments that foster creativity and innovation. I am a dedicated learner, constantly adapting to new technologies and frameworks, and actively seeking opportunities to collaborate and grow with fellow developers.</p>
+                <p>I invite you to explore my portfolio, where you can see my web development projects and experience firsthand the intuitive and visually captivating websites I have created. I am excited to contribute my skills, passion, and drive to the field of web development, and I look forward to the opportunities that lie ahead.</p>
+                <p>Please feel free to reach out to discuss potential collaborations or any inquiries. Thank you for visiting my portfolio and learning more about my journey as a web developer.</p>
+            </div>
+            <button class="btn" id="about-me-more">Read More</button>
+            <button class="btn" id="see-less">See Less</button>
         </div>
     </section>
 
@@ -79,29 +92,26 @@
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt' ></i>
-                <h3>Graphic Design</h3>
-                <p>fdavcascs sc fv serv edb vervawrvet btbvs drtyrd bestn tbdrhb frdynf tbsdtnh dftndfnygnb dvbdtf tyfn bfthbf
-                    rb rtbdg srhtfhdrbgdbdr trh tjnrthb ryn umtfh shtyy mjtyhn rhn rdt
+                <h3>Front-end Web Development</h3>
+                <p>I excel in front-end web development, creating engaging and user-friendly interfaces using HTML, CSS, and JavaScript ensuring that the code works seamlessly across different web browsers, providing consistent experiences for all users.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <!--<a href="#" class="btn">Read More</a>-->
             </div>
 
             <div class="services-box">
                 <i class='bx bx-code-alt' ></i>
-                <h3>Web Developent</h3>
-                <p>fdavcascs sc fv serv edb vervawrvet btbvs drtyrd bestn tbdrhb frdynf tbsdtnh dftndfnygnb dvbdtf tyfn bfthbf
-                    rb rtbdg srhtfhdrbgdbdr trh tjnrthb ryn umtfh shtyy mjtyhn rhn rdt
+                <h3>Back-end Web Developent</h3>
+                <p>I have a strong command of backend web development, leveraging languages like Python or Node.js, along with frameworks like Django or Express, to build robust and scalable server-side applications.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <!--<a href="#" class="btn">Read More</a>-->
             </div>
 
             <div class="services-box">
                 <i class='bx bx-code-alt' ></i>
-                <h3>Web Developent</h3>
-                <p>fdavcascs sc fv serv edb vervawrvet btbvs drtyrd bestn tbdrhb frdynf tbsdtnh dftndfnygnb dvbdtf tyfn bfthbf
-                    rb rtbdg srhtfhdrbgdbdr trh tjnrthb ryn umtfh shtyy mjtyhn rhn rdt
+                <h3>Responsive Designs</h3>
+                <p>I am skilled in developing responsive designs, ensuring that websites and applications adapt seamlessly to different screen sizes and devices, providing an optimal user experience across desktops, tablets, and mobile devices.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <!--<a href="#" class="btn">Read More</a>-->
             </div>
         </div>
     </section>
@@ -174,16 +184,16 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form onsubmit="sendEmail(); reset(); return false">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Full Name" id="name">
+                <input type="email" placeholder="Email Address" id="email">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" placeholder="Mobile Number" id="phone">
+                <input type="text" placeholder="Email Subject" id="subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -192,7 +202,7 @@
     <!--footer design-->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by Codehal | All Rights Reserved</p>
+            <p>Copyright &copy; 2023 by Abdallah Sanusi | All Rights Reserved</p>
         </div>
 
         <div class="footer-iconTop">
@@ -210,5 +220,23 @@
     
     <!--Custom JS-->
     <script src="js/script.js"></script>
+
+    <!--contact js-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken : "cfb7f92f-b28f-4fcd-9e9c-04ab6ed9951c",
+                To : 'sanusiabdallah@gmail.com',
+                From : document.getElementById("email").value,
+                Name : document.getElementById("name").value,
+                Subject : document.getElementById("subject").value,
+                Mobile : document.getElementById("phone").value,
+                Body : document.getElementById("message").value,
+            }).then(
+              message => alert(message)
+            );
+        }
+    </script>
 </body>
 </html>
